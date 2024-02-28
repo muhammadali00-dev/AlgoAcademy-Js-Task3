@@ -3,6 +3,8 @@ function Time(seconds) {
     seconds = seconds % 86400;
     let hours = (seconds / 3600);
     seconds = seconds % 3600;
+    let minutes = (seconds / 60)
+    seconds = seconds % 60
 
 
 
@@ -10,7 +12,7 @@ function Time(seconds) {
 }
 
 let customersec = Number(prompt('Enter number which you want'))
-alert( "General Time is:" + Time(customersec))
+alert("General Time is:" + Time(customersec))
 
 // 1gun = 86400 saniye
 // 1saat = 3600 saniye
